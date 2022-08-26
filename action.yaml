@@ -1,0 +1,15 @@
+name: StarkNet Interface Checker
+description: Checks the consistency of your StarkNet interface contract.
+branding:
+  icon: check
+  color: green
+runs:
+  using: "composite"
+  steps:
+    - run: python -m pip install cairo-lang # Installing dependencies
+      shell: bash
+    - run: python ${{ github.action_path }}/interface_consistency.py --cairo-path ${{ inputs.cairo-path }}
+      shell: bash
+inputs:
+  cairo-path: Path to Cairo files, used to search for files to check and for relative imports when compiling.
+  required: true
