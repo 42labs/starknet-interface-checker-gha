@@ -1,6 +1,6 @@
 # Starknet Interface Checker
 
-The starknet-interface-checker let's you check whether the contract interface matches the contract implementation. This helps you catch when your files go out of sync.
+Check whether your contract interfaces match the actual contract implementations. Don't let them go out of sync.
 
 ## Usage
 
