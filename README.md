@@ -4,7 +4,7 @@ The starknet-interface-checker let's you check whether the contract interface ma
 
 ## Usage
 
-It assumes interfaces Assumes convention that if contract is called "Contract.cairo" then interface is "IContract.cairo".
+It assumes interfaces Assumes convention that if contract is called `Contract.cairo` then interface is `IContract.cairo`.
 
 See the [Empiric repo](https://github.com/42labs/Empiric) for a real world example.
 
@@ -16,8 +16,10 @@ See the [Empiric repo](https://github.com/42labs/Empiric) for a real world examp
 
 ### Example
 
+In the following example our Cairo files are in the `contracts` folder.
+
 ```yaml
-- uses: 42labs/starknet-interface-checker@main
+- uses: 42labs/starknet-interface-checker-gha@main
   with:
     cairo-path: 'contracts'
 ```
